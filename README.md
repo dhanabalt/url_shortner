@@ -1,24 +1,5 @@
-# README
+Use the curl command to call the api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+curl -X POST -H {Authenticator: Token token} -d '{"original_url":"google.com"}' http://localhost:3000/api/v1/urls
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
