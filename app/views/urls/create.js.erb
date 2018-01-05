@@ -1,0 +1,7 @@
+$("#copy_content").hide();
+<% if @url.errors.any? %>
+	$("#alert p").html('<%= @url.errors.full_messages.first %>');
+	$("#alert").show().fadeOut(5000);
+<% else %>
+	$("#copy_content").html('<%= root_short_url(@url.short_url) %>').show();
+<% end %>
